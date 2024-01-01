@@ -150,7 +150,7 @@ echo $ID=$row['ID'];
 			</td>
 			<td width="33%"  width=40% >
 			<div align="center">
-			<img border="0" src="sand1.webp" width="174" height="57">
+			<img border="0" src="sand1.jpg" width="174" height="57">
 			</div>
 			</td>
 			<td valign="top" width="34%"  >
@@ -168,7 +168,7 @@ echo $ID=$row['ID'];
 			<div align="center">
 				<table border="0" width="100%" cellspacing="0" cellpadding="0" height="21">
 					<tr>
-							<td background="p1.webp">
+							<td background="p1.jpg">
 						<p class="MsoNormal" align="center" dir="RTL">
 					 
 							<font size="3">
@@ -206,7 +206,7 @@ while($row2=mysqli_fetch_array($result2))
 			<div align="center">
 				<table border="0" width="100%" cellspacing="0" cellpadding="0" height="13">
 					<tr>
-						<td dir="rtl" width="54%" background="p1.webp">
+						<td dir="rtl" width="54%" background="p1.jpg">
  
 					 
  
@@ -637,7 +637,7 @@ echo $strarb=$arb[6].$arb[5].$arb[3].$arb[4].$arb[2].$arb[0].$arb[1];
 						<p class="MsoNormal" align="center" dir="RTL" style="text-align: center">
 						<span style="font-family: Droid Arabic Kufi; font-weight: 400">
 						<font size="2">المبلغ كتابة :</font></span></td>
-						<td dir="rtl" width="37%" background="p1.webp">
+						<td dir="rtl" width="37%" background="p1.jpg">
 						<p class="MsoNormal" align="center" dir="RTL" style="text-align: center">
 					 
 							<p class="MsoNormal" align="center" dir="RTL">
@@ -677,7 +677,7 @@ while($row1=mysqli_fetch_array($result1))
 					<p class="MsoNormal" align="center" dir="RTL">
 					<span style="font-family: Droid Arabic Kufi; font-weight: 400">
 					<font style="font-size: 10pt">حساب <? echo $bank; ?> </font></span></td>
-					<td width="22%" background="p1.webp">
+					<td width="22%" background="p1.jpg">
 					<p class="MsoNormal" align="center" dir="RTL">
 					 
 							<font size="3">
@@ -691,7 +691,7 @@ while($row1=mysqli_fetch_array($result1))
 					<p class="MsoNormal" align="center" dir="RTL" style="text-align: center">
 					<span style="font-family: Droid Arabic Kufi; font-weight: 400">
 					<font style="font-size: 10pt">بتاريخ </font></span></td>
-					<td width="32%" background="p1.webp">
+					<td width="32%" background="p1.jpg">
  
 		 
 							<p class="MsoNormal" align="center" dir="RTL">
@@ -713,7 +713,7 @@ while($row1=mysqli_fetch_array($result1))
 					<span style="font-family: Droid Arabic Kufi; font-size:11pt; font-weight:400">
 					وذلك مقابل </span>&nbsp;:<span style="font-family: Droid Arabic Kufi; font-size:11pt; font-weight:400">&nbsp; 
 					</span></font></span></td>
-					<td width="86%" background="p1.webp">
+					<td width="86%" background="p1.jpg">
 					<span style="font-family: Droid Arabic Kufi; font-size: 11pt; font-weight: 400">
 					<? echo $pr=$row['details']; ?>   </span></td>
 				</tr>
@@ -739,7 +739,7 @@ while($row1=mysqli_fetch_array($result1))
 			<div align="center">
 				<table border="0" width="100%" cellspacing="0" cellpadding="0">
 					<tr>
-						<td width="99%" align="center" colspan="3" background="p1.webp">
+						<td width="99%" align="center" colspan="3" background="p1.jpg">
 						&nbsp;</td>
 					</tr>
 					<tr>
@@ -760,7 +760,7 @@ while($row1=mysqli_fetch_array($result1))
 						<div align="center">
 							<table border="0" width="80%" cellspacing="0" cellpadding="0" height="69">
 								<tr>
-									<td background="p1.webp">
+									<td background="p1.jpg">
 									<p class="MsoNormal" dir="RTL" align="center">
 									<span style="font-size: 10pt; font-family: Droid Arabic Kufi; font-weight: 400"><? echo $row['T9']; ?></span></td>
 									<td width="55">
@@ -770,7 +770,7 @@ while($row1=mysqli_fetch_array($result1))
 									<span style="font-size: 10pt">:</span></font></td>
 								</tr>
 								<tr>
-									<td background="p1.webp">
+									<td background="p1.jpg">
 									<p class="MsoNormal" dir="RTL" align="center">&nbsp;</td>
 									<td width="55">
 									<p class="MsoNormal" dir="RTL" align="center">
@@ -786,7 +786,7 @@ while($row1=mysqli_fetch_array($result1))
 						<div align="center">
 							<table border="0" width="80%" cellspacing="0" cellpadding="0" height="69">
 								<tr>
-									<td background="p1.webp">
+									<td background="p1.jpg">
 										<p class="MsoNormal" dir="RTL" align="center">
 									<span style="font-size: 10pt; font-family: Droid Arabic Kufi; font-weight: 400">
 
@@ -808,7 +808,7 @@ echo $row1['name'];
 									<span style="font-size: 10pt">:</span></font></td>
 								</tr>
 								<tr>
-									<td background="p1.webp">
+									<td background="p1.jpg">
 									<p class="MsoNormal" dir="RTL" align="center">&nbsp;</td>
 									<td width="55">
 									<p class="MsoNormal" dir="RTL" align="center">

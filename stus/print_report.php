@@ -118,7 +118,7 @@
  
  
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- </head>	 	<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="text-align: right; background-attachment:fixed" background="bg.webp">
+ </head>	 	<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="text-align: right; background-attachment:fixed" background="bg.jpg">
 	<div align=center > 
   
 	<html><head>
@@ -148,7 +148,7 @@ while($row8=mysqli_fetch_array($result8))
 
 <title><? echo $Branches_title_sms; ?>  </title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
- </head>	 	<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="text-align: right; background-attachment:fixed" background="bg.webp">
+ </head>	 	<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="text-align: right; background-attachment:fixed" background="bg.jpg">
 	<div align=center > 
 <?
 function d_date($date) 

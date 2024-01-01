@@ -166,7 +166,7 @@ while($row=mysqli_fetch_array($result))
 			<div align="center">
 				<table border="0" width="100%" cellspacing="0" cellpadding="0" height="21">
 					<tr>
-							<td background="p1.webp">
+							<td background="p1.jpg">
 						<table border="0" width="100%" style="border-collapse: collapse" height="82">
 							<tr>
 								<td height="31" colspan="3">
@@ -463,7 +463,7 @@ echo $row8['nat_en'];
 							</tr>
 						</table>
 						</td>
-						<td width="49%" align="center" colspan="2" background="p1.webp">
+						<td width="49%" align="center" colspan="2" background="p1.jpg">
 						<p align="right" dir="rtl"><b>ملاحظات</b> :  <br><? echo $row['paid_type2']; ?>   <? echo $row['paid_notes']; ?></td>
 					</tr>
 					 
@@ -491,7 +491,7 @@ echo $row8['nat_en'];
 						<div align="center">
 							<table border="0" width="80%" cellspacing="0" cellpadding="0" height="69">
 								<tr>
-									<td background="p1.webp">
+									<td background="p1.jpg">
 									<p class="MsoNormal" dir="RTL" align="center">
 									<span style="font-size: 10pt; font-family: Droid Arabic Kufi; font-weight: 400"><? echo $row['T9']; ?></span></td>
 									<td width="55">
@@ -501,7 +501,7 @@ echo $row8['nat_en'];
 									<span style="font-size: 10pt">:</span></font></td>
 								</tr>
 								<tr>
-									<td background="p1.webp">
+									<td background="p1.jpg">
 									<p class="MsoNormal" dir="RTL" align="center">&nbsp;</td>
 									<td width="55">
 									<p class="MsoNormal" dir="RTL" align="center">
@@ -517,7 +517,7 @@ echo $row8['nat_en'];
 						<div align="center">
 							<table border="0" width="80%" cellspacing="0" cellpadding="0" height="69">
 								<tr>
-									<td background="p1.webp">
+									<td background="p1.jpg">
 										<p class="MsoNormal" dir="RTL" align="center">
 									<span style="font-size: 10pt; font-family: Droid Arabic Kufi; font-weight: 400">
 
@@ -539,7 +539,7 @@ echo $row1['name'];
 									<span style="font-size: 10pt">:</span></font></td>
 								</tr>
 								<tr>
-									<td background="p1.webp">
+									<td background="p1.jpg">
 									<p class="MsoNormal" dir="RTL" align="center">&nbsp;</td>
 									<td width="55">
 									<p class="MsoNormal" dir="RTL" align="center">
