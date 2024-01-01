@@ -99,7 +99,7 @@ $cors_code=$row[cors_no];
 
 </div> 
 
- <div class="form-group col-lg-12"><img src="ex.webp" width=100%>
+ <div class="form-group col-lg-12"><img src="ex.jpg" width=100%>
 </div>
                    
                 </div>                    
