@@ -1,0 +1,61 @@
+[14-Jun-2021 01:02:07 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 01:04:03 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 01:04:46 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 01:22:55 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 01:26:16 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 01:36:34 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 01:37:00 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 02:03:49 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 02:13:04 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 02:25:45 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 02:25:51 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 02:26:15 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 02:28:04 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 02:30:06 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 02:31:36 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 02:33:01 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 02:34:32 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 02:37:52 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 02:38:54 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 02:43:57 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 02:45:22 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 02:47:31 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 02:48:32 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 02:51:01 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 02:52:18 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 02:54:03 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 02:55:18 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 03:05:07 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 03:06:10 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 03:09:09 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 03:11:19 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 03:12:22 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 03:12:54 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 03:14:24 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 03:15:41 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 03:16:39 America/Boise] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, null given in /home3/alzarqaa/public_html/stus/stu.php on line 4
+[14-Jun-2021 04:02:26 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Jun-2021 04:16:26 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home3/alzarqaa/public_html/stus/logout.php on line 10
+[14-Oct-2021 03:12:46 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[14-Oct-2021 06:12:26 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[14-Oct-2021 07:06:37 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[14-Oct-2021 07:07:36 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[14-Oct-2021 08:22:08 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[14-Oct-2021 09:12:17 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[15-Oct-2021 11:40:54 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[16-Oct-2021 06:11:18 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[16-Oct-2021 07:00:51 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[16-Oct-2021 08:30:40 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[18-Oct-2021 03:14:03 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[18-Oct-2021 03:24:27 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[19-Oct-2021 00:39:12 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[19-Oct-2021 01:11:53 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[19-Oct-2021 01:37:24 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[22-Oct-2021 08:27:18 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[25-Oct-2021 04:26:06 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[27-Oct-2021 11:35:24 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/mohtare2/public_html/wp/logout.php on line 10
+[02-Dec-2023 07:41:55 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
+[04-Dec-2023 06:55:09 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
+[09-Dec-2023 12:15:35 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
+[09-Dec-2023 13:10:10 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
+[19-Dec-2023 10:13:17 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10

@@ -1,0 +1,317 @@
+<?php
+error_reporting(0);
+include('session.php'); 
+include('font.php'); 
+include ("conn.php");
+$sql="insert into user_login set username='$_SESSION[username]',date='$synch1',time=NOW()";
+if(mysqli_query($conn,$sql))
+{
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>المحاور الرئيسة</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="favicon.ico"/>
+<script type="text/javascript">
+function framePrint(whichFrame){
+parent[whichFrame].focus();
+parent[whichFrame].print();
+}
+</script>
+
+ 
+
+
+
+</head>
+<body class="skin-blue">
+<div class="wrapper">      
+<?php include("header.php"); ?>
+<?php include("sidebar.php"); ?>
+
+<div class="content-wrapper">
+
+<section class="content-header" dir=rtl>
+<h1><small>المحاور الفرعية</small></h1>
+</section>
+
+ 
+
+
+
+ 
+<section class="content" dir=rtl>
+<div class="box box-info">
+<div class="box-body">
+
+
+<p style="text-align: left"> <a href="" class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>  اضافة جديد</a></p>
+
+<div class="example-modal">
+            <div class="modal" id="myModal" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                <form action="" method="post">
+                  <div class="modal-header">
+					<b><font face="Droid Arabic Kufi" size="5">اضافة جديد</font><font size="5"></font></b>
+                  </div>
+                  <div class="modal-body">
+                  
+<div class="row">
+
+
+ 
+
+<div class="form-group col-lg-12">
+<label>المحور الرئيسة</label>
+<select  style="width: 100%;"  class="form-control input-sm select2"  size="1" name="T1"   required    class="form-control"  >
+ <option></option>
+
+ 
+<?php
+include ("conn.php");
+$query2 = "select * from main_axes where cors_ID='$_GET[cors_ID]'";
+$result2 = mysqli_query($conn,$query2);
+$rows2 = mysqli_num_rows($result2 );
+if($rows2 > 0 )
+{
+while($row2=mysqli_fetch_array($result2))
+{
+?>
+<option value="<?php echo $row2['Main_axes_ID']; ?>"><?php echo $row2['Main_axes']; ?></option>
+<?php } } ?>
+</select>
+
+<input  type=hidden name="cors_ID"   size="20"   value="<?php echo $_GET['cors_ID']; ?>" required="required"   class="form-control"  >
+</div> 
+ 
+ <div class="form-group col-lg-12">
+<label>المحور الفرعي</label>
+<input  name="T2"   size="20"   required="required"   class="form-control"  >
+ 
+</div> 
+
+ <div class="form-group col-lg-12">
+<label>المدة الزمنية  </label>
+<input  type=number name="T3"   size="20"   required="required"   class="form-control"  >
+ 
+</div>
+ 
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">الغاء</button>
+                    <input type="submit" class="btn btn-success " value="اضافة" name="add">
+                  </div></form>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+          </div>
+          
+          
+
+          
+<table    class="table table-bordered table-striped"  >
+                    <thead>
+                      <tr>
+                        <th align="right"><p align="center">#</th>
+                        <th align="right"><p align="center">المحاور الرئيسة
+						 </th>
+                        <th align="right"><p align="center">المحاور الفرعية </th>
+                        <th align="right"><p align="center">المدة الزمنية   </th>
+                        <th align="right"><p align="center"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                     <?php
+include ("conn.php");
+$query = "select * from main_axes,sub_axes where  main_axes.Main_axes_ID=sub_axes.Main_axes_ID and sub_axes.cors_ID='$_GET[cors_ID]' ";
+$result = mysqli_query($conn,$query);
+$rows = mysqli_num_rows($result );
+if($rows > 0 )
+{
+while($row=mysqli_fetch_array($result))
+{
+?>
+ <tr>
+                        <form method="POST" action="">
+                        <td align="right"><p align="center"><?php echo $row['Main_axes_ID']; ?></td>
+                        <td align="right"><p align="center"><?php echo $row['Main_axes']; ?></td>
+ 
+ 
+						
+                        <td align="right"><p align="center"><?php echo $row['sub_axes']; ?></td>
+                        <td align="right"><p align="center"><?php echo $row['time']; ?></td>
+ 
+ 
+						
+                        <td align="center">
+                        <a href="" data-id="<?php echo $row['sub_axes_ID']; ?>" data-target="#myModaEdit<?php echo $row['sub_axes_ID']; ?>" data-toggle="modal" class="btn btn-info btn-sm   "><i class="fa fa-pencil"></i> </a>
+                        <a href="" data-id="<?php echo $row['sub_axes_ID']; ?>" data-target="#myModaDelete<?php echo $row['sub_axes_ID']; ?>" data-toggle="modal" class="btn btn-danger btn-sm  "><i class="fa fa-trash-o "></i></a>
+</td>
+                      	</form>
+                      </tr>
+                      
+                      <div class="example-modal">
+            <div class="modal" id="myModaEdit<?php echo $row['sub_axes_ID']; ?>" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">                <form action="" method="post">
+                  <div class="modal-header">
+					<b><font face="Droid Arabic Kufi" size="5">تعديل بيانات : <?php echo $row['Main axes']; ?></font><font size="5"></font></b>
+                  </div>
+                  <div class="modal-body">
+ 
+ 
+                  
+					<input  type=hidden name="idds"   size="20"   value="<?php echo $row['sub_axes_ID']; ?>" required="required"   class="form-control"  >
+
+<div class="row">
+
+
+ 
+
+<div class="form-group col-lg-12">
+<label>الفئة </label>
+<input  name="T2"   size="20"   required="required"   class="form-control" value="<?php echo $row['Main_axes']; ?>"  >
+</div>  
+ 
+<div class="form-group col-lg-12">
+<label>المدة الزمنية </label>
+<input  name="T3"  type=number size="20"   required="required"   class="form-control" value="<?php echo $row['time']; ?>"  >
+</div>  
+ 
+ 
+
+
+</div>                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">الغاء</button>
+ 
+<input type="submit" class="btn btn-success"  value="حفظ التغييرات" name="edit"> 
+                  </div></form>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+          </div>  
+          
+
+ <div class="example-modal">
+            <div class="modal" id="myModaDelete<?php echo $row['sub_axes_ID']; ?>" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+               <form action="" method="post">
+                  <div class="modal-header">
+					<b><font face="Droid Arabic Kufi" size="5">حذف بيانات : <?php echo $row['name']; ?></font><font size="5"></font></b>
+					<input  type=hidden name="idd"   size="20"   value="<?php echo $row['sub_axes_ID']; ?>" required="required"   class="form-control"  >
+
+                  </div>
+                  <div class="modal-body">
+                  
+<div class="row">
+<div class="form-group col-lg-12">
+<b><label>هل تريد حقًا حذف هذه البيانات ؟</label></b>
+ 
+</div>
+</div>                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">الغاء</button>
+ <input type="submit" class="btn btn-danger"  value="حذف" name="delete">                  </div></form>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+          </div>
+
+<?php 
+}
+} 
+?>
+                    </tbody>
+                     
+                  </table>
+                 
+ 
+
+                 
+                  </div>
+</div>
+</section>
+
+
+</div><!-- /.content-wrapper -->
+<?php include('footer.php'); ?>
+    </div><!-- ./wrapper -->
+  </body>
+</html>
+
+<?php
+if (isset($_POST['add'])) {
+ $T1 = mysqli_real_escape_string($conn,$_POST['T1']);
+ $T2 = mysqli_real_escape_string($conn,$_POST['T2']); 
+ $T3 = mysqli_real_escape_string($conn,$_POST['T3']); 
+ $T4 = mysqli_real_escape_string($conn,$_POST['T4']); 
+ $T5 = mysqli_real_escape_string($conn,$_POST['T5']); 
+ $T6 = mysqli_real_escape_string($conn,$_POST['T6']); 
+ $T7 = mysqli_real_escape_string($conn,$_POST['T7']); 
+ $cors_ID= mysqli_real_escape_string($conn,$_POST['cors_ID']); 
+ 
+$sql="insert into sub_axes set Main_axes_ID='$T1',sub_axes='$T2',cors_ID='$cors_ID',time='$T3'   ";
+if(mysqli_query($conn,$sql))
+{
+$last_id = mysqli_insert_id($conn);
+echo '<script>
+function myFunction() {
+document.getElementById("snackbar").style.visibility = "hidden";
+}
+ document.getElementById("snackbar").style.visibility = "visible";
+ window.setTimeout("hideMsg()", 1000); </script>';
+?><meta http-equiv="refresh" content="0;url=<?php echo( $self ); ?>"><?php
+}
+}
+elseif(isset($_POST['edit'])) {
+ $T1 = mysqli_real_escape_string($conn,$_POST['T1']);
+ $T2 = mysqli_real_escape_string($conn,$_POST['T2']); 
+ $T3 = mysqli_real_escape_string($conn,$_POST['T3']); 
+ $T4 = mysqli_real_escape_string($conn,$_POST['T4']); 
+ $T5 = mysqli_real_escape_string($conn,$_POST['T5']); 
+ $T6 = mysqli_real_escape_string($conn,$_POST['T6']); 
+ $T7 = mysqli_real_escape_string($conn,$_POST['T7']); 
+ $T8 = mysqli_real_escape_string($conn,$_POST['T8']); 
+ $ids = mysqli_real_escape_string($conn,$_POST['ids']); 
+ $stop = mysqli_real_escape_string($conn,$_POST['stop']); 
+
+$sql="update sub_axes set   sub_axes='$T2',time='$T3'  where sub_axes_ID='$idds'";
+if(mysqli_query($conn,$sql))
+{
+$last_id = mysqli_insert_id($conn);
+echo '<script>
+function myFunction() {
+document.getElementById("snackbar2").style.visibility = "hidden";
+}
+ document.getElementById("snackbar2").style.visibility = "visible";
+ window.setTimeout("hideMsg()", 1000); </script>';
+?><meta http-equiv="refresh" content="0;url=<?php echo( $self ); ?>"><?php
+}
+}
+
+elseif(isset($_POST['delete'])) {
+ $idd = mysqli_real_escape_string($conn,$_POST['idd']); 
+
+$sql="delete from sub_axes where sub_axes_ID='$idd'";
+if(mysqli_query($conn,$sql))
+{
+$last_id = mysqli_insert_id($conn);
+echo '<script>
+function myFunction() {
+document.getElementById("snackbar3").style.visibility = "hidden";
+}
+ document.getElementById("snackbar3").style.visibility = "visible";
+ window.setTimeout("hideMsg()", 2000); </script>';
+?><meta http-equiv="refresh" content="0;url=<?php echo( $self ); ?>"><?php
+}
+}
+
+?>
