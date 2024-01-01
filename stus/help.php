@@ -307,7 +307,7 @@ else
   <!-- Start main-content -->
   <div class="main-content">
     <!-- Section: inner-header -->
-    <section class="inner-header divider layer-overlay overlay-theme-colored-7" data-bg-img="images/we-provide-bg1.webp">
+    <section class="inner-header divider layer-overlay overlay-theme-colored-7" data-bg-img="images/we-provide-bg1.jpg">
       <div class="container pt-120 pb-60">
         <!-- Section Content -->
         <div class="section-content">
@@ -497,7 +497,7 @@ else
     
     
     <!-- Divider: Funfact -->
-    <section class="layer-overlay overlay-theme-colored-9" data-bg-img="images/we-provide-bg.webp" data-parallax-ratio="0.7">
+    <section class="layer-overlay overlay-theme-colored-9" data-bg-img="images/we-provide-bg.jpg" data-parallax-ratio="0.7">
       <div class="container pt-90 pb-90">
         <div class="row mt-30">
            
@@ -574,7 +574,7 @@ while($row=mysqli_fetch_array($result))
   <!-- end main-content -->
   
   <!-- Footer -->
-    <footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="images/we-provide-bg.webp">
+    <footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="images/we-provide-bg.jpg">
     <div class="container pt-70 pb-40">
 
       <div class="row">
