@@ -357,7 +357,7 @@ while($row=mysqli_fetch_array($result))
               <?
               $imagePath = "stus/cors_files/".$row['photo'];
 if(!file_exists($imagePath) or $row['photo']=="")
-    $imagePath = "images/portfolio/default.webp";
+    $imagePath = "images/portfolio/default.jpg";
     else
               $imagePath = "stus/cors_files/".$row['photo'];
     ?>
@@ -528,35 +528,9 @@ if(isset($message)) echo  $message11='<br><font color="blue">'.$message.'</font>
   <!-- end main-content -->
   
   <!-- Footer -->
-    <footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="images/we-provide-bg.webp">
-     
-    <div class="footer-bottom" data-bg-color="#2b2d3b">
-      <div class="container pt-20 pb-20">
-        <div class="row">
-          <div class="col-md-6">
-            <p class="font-12 text-black-777 m-0 sm-text-center">@ كل الحقوق محفوظة ل<?php echo $site_name; ?></p>
-          </div>
-          <div class="col-md-6 text-right">
-            <div class="widget no-border m-0">
-              <ul class="list-inline sm-text-center mt-5 font-12" style="text-align: left">
-                <li>
-                  <a href="#">التعليمات</a>
-                </li>
-                <li>|</li>
-                <li>
-                  <a href="#">المساعدة</a>
-                </li>
-                <li>|</li>
-                <li>
-                  <a href="#">الدعم</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <?php include 'footer.php'; ?>
+  
+  
   <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
 </div>
 <!-- end wrapper -->
