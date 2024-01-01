@@ -238,7 +238,7 @@ $name2=$row8['name2'];
 											 
 												<div align="center">
 												
-											 <img border="0" src="logo4.webp"     width="150"    >
+											 <img border="0" src="logo4.jpg"     width="150"    >
 												 </div>
 												</td>
 												<td width="369" style="border-bottom-style: none; border-bottom-width: medium">
@@ -303,12 +303,12 @@ $co1=5;
 										<p class="MsoBodyText" align="center" dir="RTL" style="margin-left:-27.0pt;
 text-align:center;line-height:normal"><font color="#000080">
 										<? if($row['type']=='دبلوم') { ?> 
-<img border="0" src="3333.webp"   height="56"><span lang="AR-SA" style="font-size:30.0pt;font-family:FS_Naskh_Ahram">
+<img border="0" src="3333.jpg"   height="56"><span lang="AR-SA" style="font-size:30.0pt;font-family:FS_Naskh_Ahram">
 
 
 <? } else { ?> 
 
-<img border="0" src="333.webp"   height="56"><span lang="AR-SA" style="font-size:30.0pt;font-family:FS_Naskh_Ahram">
+<img border="0" src="333.jpg"   height="56"><span lang="AR-SA" style="font-size:30.0pt;font-family:FS_Naskh_Ahram">
 <? } ?>
 										</span></font></td>
 									</tr>

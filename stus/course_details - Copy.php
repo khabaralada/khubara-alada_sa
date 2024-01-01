@@ -238,7 +238,7 @@ if($rows14 > 0 )
               
               $imagePath = "cors_files/".$row['photo'];
 if(!file_exists($imagePath) or $row['photo']=="")
-    $imagePath = "../images/portfolio/default.webp";
+    $imagePath = "../images/portfolio/default.jpg";
     else
               $imagePath = "cors_files/".$row['photo'];
     ?>
@@ -647,7 +647,7 @@ $CC++;
  
               $imagePath = "cors_files/".$row11['sub_photo'];
 if(!file_exists($imagePath) or $row11['sub_photo']=="")
-    $imagePath = "../images/portfolio/default.webp";
+    $imagePath = "../images/portfolio/default.jpg";
     else
               $imagePath = "cors_files/".$row11['sub_photo'];
  

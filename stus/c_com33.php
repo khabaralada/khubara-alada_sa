@@ -130,7 +130,7 @@ body {
 
  
  
- 	 background-image: url("bg2.webp");  
+ 	 background-image: url("bg2.jpg");  
  	  height: 100%; 
 margin: 1px;
     background-size:   cover;                      /* <------ */

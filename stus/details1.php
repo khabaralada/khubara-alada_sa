@@ -532,7 +532,7 @@ while($row=mysqli_fetch_array($result))
               
               $imagePath = "stus/cors_files/".$row['photo'];
 if(!file_exists($imagePath) or $row['photo']=="")
-    $imagePath = "images/portfolio/default.webp";
+    $imagePath = "images/portfolio/default.jpg";
     else
               $imagePath = "stus/cors_files/".$row['photo'];
     ?>
@@ -563,7 +563,7 @@ while($row1=mysqli_fetch_array($result1))
 ?> 
 <div class="gallery-item photography">
                   <div class="thumb">
-                    <img class="img-fullwidth" src="v.webp" alt="project"><?php echo $row1['video_cors']; ?>
+                    <img class="img-fullwidth" src="v.jpg" alt="project"><?php echo $row1['video_cors']; ?>
                     <div class="overlay-shade"></div>
                     <div class="icons-holder">
                       <div class="icons-holder-inner">
@@ -802,7 +802,7 @@ while($row=mysqli_fetch_array($result))
   <!-- end main-content -->
   
   <!-- Footer -->
-    <footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="images/we-provide-bg.webp">
+    <footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="images/we-provide-bg.jpg">
     <div class="container pt-70 pb-40">
 
       <div class="row">

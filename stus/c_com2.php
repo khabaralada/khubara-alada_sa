@@ -17,7 +17,7 @@ error_reporting(0);
 }
 
 html { 
-  background: url(bg2.webp) no-repeat 
+  background: url(bg2.jpg) no-repeat 
     center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -33,7 +33,7 @@ body {
 
  
  
- 	 background-image: url("bg2.webp");  
+ 	 background-image: url("bg2.jpg");  
  	
     background-size:   cover;                      /* <------ */
     background-repeat: no-repeat;

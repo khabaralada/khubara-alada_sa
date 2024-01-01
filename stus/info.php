@@ -32,7 +32,7 @@
   body {
     zoom: 94%;
     
-     	 background-image: url("bg1.webp");  
+     	 background-image: url("bg1.jpg");  
  	
     background-size:   cover;                      /* <------ */
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
 }
 
 html { 
-  background: url(bg1.webp) no-repeat 
+  background: url(bg1.jpg) no-repeat 
     center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -74,7 +74,7 @@ body {
 
  
  
- 	 background-image: url("bg1.webp");  
+ 	 background-image: url("bg1.jpg");  
  	
     background-size:   cover;                      /* <------ */
     background-repeat: no-repeat;

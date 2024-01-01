@@ -182,7 +182,7 @@ while($row=mysqli_fetch_array($result))
               <?
               $imagePath = "cors_files/".$row['photo'];
 if(!file_exists($imagePath) or $row['photo']=="")
-    $imagePath = "../images/portfolio/default.webp";
+    $imagePath = "../images/portfolio/default.jpg";
     else
               $imagePath = "cors_files/".$row['photo'];
     ?>

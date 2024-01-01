@@ -294,7 +294,7 @@ $name1=$row8['name1'];
 									<tr>
 										<td dir="rtl" height="55" style="border-style: none; border-width: medium">
 										<p align="center">
-										<img border="0" src="44.webp" width="381" height="55"></td>
+										<img border="0" src="44.jpg" width="381" height="55"></td>
 									</tr>
 
 	

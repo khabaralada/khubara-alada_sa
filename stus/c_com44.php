@@ -134,7 +134,7 @@ body {
 
  
  
- 	 background-image: url("bg2.webp");  
+ 	 background-image: url("bg2.jpg");  
  	
     background-size:   cover;                      /* <------ */
     background-repeat: no-repeat;
@@ -249,7 +249,7 @@ while($row=mysqli_fetch_array($result))
 										<table border="0" width="100%" cellspacing="0" cellpadding="0" height="169">
 											<tr>
 												<td class="auto-style23"   >	
-												 <img border="0" src="log.webp" width="25%" style="float: center"  ></td>
+												 <img border="0" src="log.jpg" width="25%" style="float: center"  ></td>
 												<td width="264">
 												<div align="center">
 																						&nbsp;</div>
@@ -343,7 +343,7 @@ $name1=$row8['name1'];
 									<tr>
 										<td dir="rtl" height="55" style="border-style: none; border-width: medium">
 										<p align="center">
-										<img border="0" src="44.webp" width="381" height="55"></td>
+										<img border="0" src="44.jpg" width="381" height="55"></td>
 									</tr>
 
 	

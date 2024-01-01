@@ -222,7 +222,7 @@ while($row1=mysqli_fetch_array($result1))
 <?php } else {  ?>
 
  
-<a href="<?php echo $row1['video_title']; ?>"  target=_blank > <img src='../v.webp' style="width:100%;height:450px " ></a>
+<a href="<?php echo $row1['video_title']; ?>"  target=_blank > <img src='../v.jpg' style="width:100%;height:450px " ></a>
  
 
 
@@ -241,7 +241,7 @@ while($row1=mysqli_fetch_array($result1))
               
               $imagePath = "cors_files/".$row['photo'];
 if(!file_exists($imagePath) or $row['photo']=="")
-    $imagePath = "../images/portfolio/default.webp";
+    $imagePath = "../images/portfolio/default.jpg";
     else
               $imagePath = "cors_files/".$row['photo'];
     ?>          
@@ -401,7 +401,7 @@ $CC++;
  
               $imagePath = "cors_files/".$row11['sub_photo'];
 if(!file_exists($imagePath) or $row11['sub_photo']=="")
-    $imagePath = "../images/portfolio/default.webp";
+    $imagePath = "../images/portfolio/default.jpg";
     else
               $imagePath = "cors_files/".$row11['sub_photo'];
  
