@@ -239,7 +239,7 @@ $C++;
 <?php } else {  ?>
 
  <div class="form-group col-lg-12">
-<a href="<?php echo $row1['video_title']; ?>"  target=_blank > <img src='../v.webp' width='100%'></a>
+<a href="<?php echo $row1['video_title']; ?>"  target=_blank > <img src='../v.jpg' width='100%'></a>
  </div>
 
 
