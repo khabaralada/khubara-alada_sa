@@ -59,3 +59,14 @@
 [09-Dec-2023 12:15:35 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
 [09-Dec-2023 13:10:10 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
 [19-Dec-2023 10:13:17 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
+[26-Dec-2023 05:54:33 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
+[27-Dec-2023 13:15:05 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
+[31-Dec-2023 11:57:33 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
+[31-Dec-2023 11:58:23 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
+[31-Dec-2023 12:23:46 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
+[31-Dec-2023 12:24:45 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
+[01-Jan-2024 06:46:07 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
+[01-Jan-2024 06:46:51 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
+[01-Jan-2024 06:48:15 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
+[01-Jan-2024 09:28:51 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10
+[01-Jan-2024 10:23:49 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/khubaraa/public_html/wp/logout.php on line 10

@@ -91,7 +91,7 @@ parent[whichFrame].print();
 
 </div> 
 
- <div class="form-group col-lg-12"><img src="ex1.webp" width=100%>
+ <div class="form-group col-lg-12"><img src="ex1.jpg" width=100%>
 </div>
                    
                 </div>                    
