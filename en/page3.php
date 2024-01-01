@@ -292,7 +292,7 @@ else
   <!-- Start main-content -->
   <div class="main-content">
     <!-- Section: inner-header -->
-    <section class="inner-header divider layer-overlay overlay-theme-colored-7" data-bg-img="../images/we-provide-bg1.webp">
+    <section class="inner-header divider layer-overlay overlay-theme-colored-7" data-bg-img="../images/we-provide-bg1.jpg">
       <div class="container pt-120 pb-60">
         <!-- Section Content -->
         <div class="section-content">
@@ -369,7 +369,7 @@ if($C%3==0) echo '<div class="row">';
                               <?
               $imagePath = "../stus/cors_files/".$row['photo'];
 if(!file_exists($imagePath) or $row['photo']=="")
-    $imagePath = "../images/portfolio/default.webp";
+    $imagePath = "../images/portfolio/default.jpg";
     else
               $imagePath = "../stus/cors_files/".$row['photo'];
     ?>
@@ -433,7 +433,7 @@ while($row1=mysqli_fetch_array($result1))
     </section>
 
     <!-- Divider: Funfact -->
-    <section class="layer-overlay overlay-theme-colored-9" data-bg-img="../images/we-provide-bg.webp" data-parallax-ratio="0.7">
+    <section class="layer-overlay overlay-theme-colored-9" data-bg-img="../images/we-provide-bg.jpg" data-parallax-ratio="0.7">
       <div class="container pt-90 pb-90">
         <div class="row mt-30">
            
@@ -461,7 +461,7 @@ while($row=mysqli_fetch_array($result))
   <!-- end main-content -->
   
   <!-- Footer -->
-  <footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="../images/we-provide-bg.webp">
+  <footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="../images/we-provide-bg.jpg">
     <div class="container pt-70 pb-40">
       <div class="row">
         <div class="col-sm-6 col-md-3">

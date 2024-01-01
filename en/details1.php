@@ -508,7 +508,7 @@ while($row=mysqli_fetch_array($result))
 <?
               $imagePath = "../stus/cors_files/".$row['photo'];
 if(!file_exists($imagePath) or $row['photo']=="")
-    $imagePath = "../images/portfolio/default.webp";
+    $imagePath = "../images/portfolio/default.jpg";
     else
               $imagePath = "../stus/cors_files/".$row['photo'];
     ?>
@@ -719,7 +719,7 @@ while($row=mysqli_fetch_array($result))
   <!-- end main-content -->
   
   <!-- Footer -->
-  <footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="../images/we-provide-bg.webp">
+  <footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="../images/we-provide-bg.jpg">
     <div class="container pt-70 pb-40">
       <div class="row">
         <div class="col-sm-6 col-md-3">

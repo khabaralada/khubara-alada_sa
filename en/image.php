@@ -292,7 +292,7 @@ else
   <!-- Start main-content -->
   <div class="main-content">
     <!-- Section: inner-header -->
-    <section class="inner-header divider layer-overlay overlay-theme-colored-7" data-bg-img="../images/we-provide-bg1.webp">
+    <section class="inner-header divider layer-overlay overlay-theme-colored-7" data-bg-img="../images/we-provide-bg1.jpg">
       <div class="container pt-120 pb-60">
         <!-- Section Content -->
         <div class="section-content">
@@ -418,7 +418,7 @@ while($row=mysqli_fetch_array($result))
   <!-- end main-content -->
   
   <!-- Footer -->
-  <footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="../images/we-provide-bg.webp">
+  <footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="../images/we-provide-bg.jpg">
     <div class="container pt-70 pb-40">
       <div class="row">
         <div class="col-sm-6 col-md-3">

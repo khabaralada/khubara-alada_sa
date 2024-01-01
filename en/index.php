@@ -468,9 +468,9 @@ else
           <div id="rev_slider_home" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
             <ul>
               <!-- SLIDE 1 -->
-              <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="../images/slide-bg-1.webp" data-rotate="0"  data-fstransition="fade" data-saveperformance="off" data-title="Web Show" data-description="">
+              <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="../images/slide-bg-1.jpg" data-rotate="0"  data-fstransition="fade" data-saveperformance="off" data-title="Web Show" data-description="">
                 <!-- MAIN IMAGE -->
-                <img src="../images/slide-bg-1.webp" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                <img src="../images/slide-bg-1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                 <!-- LAYERS -->
                 <!-- LAYER NR. 1 -->
                 <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0 bg-theme-colored-transparent-4" 
@@ -558,9 +558,9 @@ else
               </li>
 
               <!-- SLIDE 2 -->
-              <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="../images/slide-bg-2.webp" data-rotate="0"  data-fstransition="fade" data-saveperformance="off" data-title="Web Show" data-description="">
+              <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="../images/slide-bg-2.jpg" data-rotate="0"  data-fstransition="fade" data-saveperformance="off" data-title="Web Show" data-description="">
                 <!-- MAIN IMAGE -->
-                <img src="../images/slide-bg-2.webp" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                <img src="../images/slide-bg-2.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                 <!-- LAYERS -->
                 <!-- LAYER NR. 1 -->
                 <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0 bg-theme-colored-transparent-4" 
@@ -647,9 +647,9 @@ else
               </li>
 
               <!-- SLIDE 3 -->
-              <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="../images/slide-bg-3.webp" data-rotate="0"  data-fstransition="fade" data-saveperformance="off" data-title="Web Show" data-description="">
+              <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="../images/slide-bg-3.jpg" data-rotate="0"  data-fstransition="fade" data-saveperformance="off" data-title="Web Show" data-description="">
                 <!-- MAIN IMAGE -->
-                <img src="../images/slide-bg-3.webp" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                <img src="../images/slide-bg-3.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
                 <!-- LAYERS -->
                 <!-- LAYER NR. 1 -->
                 <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0 bg-theme-colored-transparent-4" 
@@ -886,7 +886,7 @@ while($row=mysqli_fetch_array($result))
                               <?
               $imagePath = "../stus/cors_files/".$row['photo'];
 if(!file_exists($imagePath) or $row['photo']=="")
-    $imagePath = "../images/portfolio/default.webp";
+    $imagePath = "../images/portfolio/default.jpg";
     else
               $imagePath = "../stus/cors_files/".$row['photo'];
     ?>
@@ -965,7 +965,7 @@ while($row1=mysqli_fetch_array($result1))
         <div class="section-content">
           <div class="row">
             <div class="col-md-3">
-              <img class="img-fullwidth maxwidth500" src="../logo.webp"  style="width:460px " alt="">
+              <img class="img-fullwidth maxwidth500" src="../logo.jpg"  style="width:460px " alt="">
             </div>
             <div class="col-md-9">
               <h2 class="text-uppercasetext-theme-colored mt-0 mt-sm-30"><span class="text-theme-colored2"><?php echo $site_name_en; ?> </span></h2>
@@ -1027,7 +1027,7 @@ while($row1=mysqli_fetch_array($result1))
     </section>
 
     <!-- Divider: Why Choose Us -->
-    <section id="reservation" class="parallax layer-overlay overlay-theme-colored-9" data-bg-img="../images/we-provide-bg.webp" data-parallax-ratio="0.4">
+    <section id="reservation" class="parallax layer-overlay overlay-theme-colored-9" data-bg-img="../images/we-provide-bg.jpg" data-parallax-ratio="0.4">
       <div class="container">
         <div class="row">
           <div class="col-md-8 sm-text-center">
@@ -1320,7 +1320,7 @@ while($row=mysqli_fetch_array($result))
 
 
     <!-- Divider: Divider -->
-    <section class="parallax divider layer-overlay overlay-theme-colored-9" data-bg-img="../images/we-provide-bg1.webp" data-parallax-ratio="0.4">
+    <section class="parallax divider layer-overlay overlay-theme-colored-9" data-bg-img="../images/we-provide-bg1.jpg" data-parallax-ratio="0.4">
       <div class="container pt-60 pb-90">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -1352,7 +1352,7 @@ It helps to get results from others in the organization, and in a way they show 
               <div class="item">
                 <div class="testimonial pt-10">
                   <div class="thumb pull-left flip mb-0 mr-0">
-                    <img class="img-thumbnail img-circle" alt="" src="../images/blog-bg-4.webp" width="100"style="width:100px;height:100px" >
+                    <img class="img-thumbnail img-circle" alt="" src="../images/blog-bg-4.jpg" width="100"style="width:100px;height:100px" >
                   </div>
                   <div class="testimonial-content">
                     <h4 class="mt-10 font-16 mb-0"><span class="text-theme-colored2">computer</span></h4>
@@ -1363,7 +1363,7 @@ It helps to get results from others in the organization, and in a way they show 
               <div class="item">
                 <div class="testimonial pt-10">
                   <div class="thumb pull-left flip mb-0 mr-0">
-                    <img class="img-thumbnail img-circle" alt="" src="../images/blog-bg-3.webp" width="100"style="width:100px;height:100px" >
+                    <img class="img-thumbnail img-circle" alt="" src="../images/blog-bg-3.jpg" width="100"style="width:100px;height:100px" >
                   </div>
                   <div class="testimonial-content">
                     <h4 class="mt-10 font-16 mb-0"><span class="text-theme-colored2">English language</span></h4>
@@ -1374,7 +1374,7 @@ It helps to get results from others in the organization, and in a way they show 
               <div class="item">
                 <div class="testimonial pt-10">
                   <div class="thumb pull-left flip mb-0 mr-0">
-                    <img class="img-thumbnail img-circle" alt="" src="../images/blog-bg-2.webp" width="100"style="width:100px;height:100px" >
+                    <img class="img-thumbnail img-circle" alt="" src="../images/blog-bg-2.jpg" width="100"style="width:100px;height:100px" >
                   </div>
                   <div class="testimonial-content">
                     <h4 class="mt-10 font-16 mb-0"><span class="text-theme-colored2">Administrative and educational courses</span></h4>
@@ -1385,7 +1385,7 @@ It helps to get results from others in the organization, and in a way they show 
               <div class="item">
                 <div class="testimonial pt-10">
                   <div class="thumb pull-left flip mb-0 mr-0">
-                    <img class="img-thumbnail img-circle" alt="" src="../images/blog-bg-1.webp" width="100"style="width:100px;height:100px" >
+                    <img class="img-thumbnail img-circle" alt="" src="../images/blog-bg-1.jpg" width="100"style="width:100px;height:100px" >
                   </div>
                   <div class="testimonial-content">
                     <h4 class="mt-10 font-16 mb-0"><span class="text-theme-colored2">Hospitality and hotel</span></h4>
@@ -1507,7 +1507,7 @@ while($row=mysqli_fetch_array($result))
   <!-- end main-content -->
   </div>
   <!-- Footer -->
-  <footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="../images/we-provide-bg.webp">
+  <footer id="footer" class="footer divider layer-overlay overlay-dark-9" data-bg-img="../images/we-provide-bg.jpg">
     <div class="container pt-70 pb-40">
       <div class="row">
         <div class="col-sm-6 col-md-3">
