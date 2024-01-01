@@ -1482,7 +1482,7 @@ section > .container-fluid {
   background-position: bottom right;
 }
 .menuzord-menu > li > .megamenu.megamenu-bg-img {
-  background-image: url('../images/megamenu/megamenu-dropdown.webp');
+  background-image: url('../images/megamenu/megamenu-dropdown.jpg');
 }
 .menuzord-menu > li > .megamenu .megamenu-row ul {
   margin-left: 0;
@@ -8691,7 +8691,7 @@ input.input-circled {
   box-shadow: 3px 4px 14px 0 #ccc;
 }
 .subscribe-newsletter {
-  background-image: url("../images/bg/bg11.webp");
+  background-image: url("../images/bg/bg11.jpg");
   background-size: cover;
   padding: 290px 100px 45px;
 }
