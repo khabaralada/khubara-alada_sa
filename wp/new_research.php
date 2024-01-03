@@ -143,7 +143,7 @@ include("../config.php");
 where user_cors.cors_ID=reg_cors.no   and cors.cors_ID=subjects.cors_ID and address=cors.ID  and Supervisor='$ss' order by dates DESC limit 500";
                 elseif ($_SESSION['acount_type'] == 2)
                   $query = "select * from reg_cors,user_cors,subjects,cors 
-where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and cors.cors_ID=subjects.cors_ID and address=cors.ID  and Supervisor='$ss' order by dates DESC limit 500";
+where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  cors.cors_ID=subjects.cors_ID and address=cors.ID  and Supervisor='$ss' order by dates DESC limit 500";
                 elseif ($_SESSION['acount_type'] == 3)
                   $query = "select * from user_crm,reg_cors,user_cors,subjects,cors
 where user_cors.cors_ID=reg_cors.no and user_crmBranches='$_SESSION[Branches]'  and cors.cors_ID=subjects.cors_ID and address=cors.ID  and Supervisor='$ss' and user_crm.ID=user_cors.user_ID order by dates DESC limit 500";
