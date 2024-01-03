@@ -169,7 +169,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
 where user_cors.cors_ID=reg_cors.no and   cors.cors_ID=subjects.cors_ID and address=cors.ID  and Supervisor='$ss' order by reg_cors.no DESC limit 500";
                 elseif ($_SESSION['acount_type'] == 2)
                   $query = "select * from reg_cors,user_cors,subjects,cors 
-where user_cors.cors_ID=reg_cors.no and  AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and cors.cors_ID=subjects.cors_ID and address=cors.ID  and Supervisor='$ss' order by reg_cors.no DESC limit 500";
+where user_cors.cors_ID=reg_cors.no AND (user_ID='$_SESSION[user_ID]' OR user_ID IS NULL) and cors.cors_ID=subjects.cors_ID and address=cors.ID  and Supervisor='$ss' order by reg_cors.no DESC limit 500";
 
                 elseif ($_SESSION['acount_type'] == 3)
                   $query = "select * from user_crm,reg_cors,user_cors,subjects,cors
@@ -204,14 +204,14 @@ where user_cors.cors_ID=reg_cors.no and  cors.cors_ID=subjects.cors_ID and addre
                       <td align="right">
                         <p align="center"><?php echo $row['mobile']; ?>
                       </td>
-                      <td align="right"><a target=_blank href="https://wa.me/966<?php echo $row['mobile']; ?>?text=
+                      <td align="right"><a target=_blank href="https://wa.me/966<?php echo $row[mobile]; ?>?text=
  
 <?php echo $site_name; ?>%20%0D%0A
  
 %20%0D%0A
 
-اسم الدورة%20  :<?php echo nl2br($row['cors_name']); ?>%0D%0A
-مرحبا%20  <?php echo nl2br($row['name']); ?>%0D%0A
+اسم الدورة%20  :<?php echo nl2br($row[cors_name]); ?>%0D%0A
+مرحبا%20  <?php echo nl2br($row[name]); ?>%0D%0A
 السلام عليكم ورحمه الله وبركاته%20  %0D%0A
  
  
@@ -395,7 +395,7 @@ where user_cors.cors_ID=reg_cors.no and  cors.cors_ID=subjects.cors_ID and addre
                                     <label>المسوق </label>
 
                                     <select name="user_cors" class="form-control" required="">
-                                      <option value="<?php echo $row['user_ID']; ?>"><?php echo $names; ?></option>
+                                      <option value="<?php echo $row[user_ID]; ?>"><?php echo $names; ?></option>
 
                                       <option></option>
                                       <?php
