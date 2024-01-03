@@ -248,7 +248,7 @@ $auth_user_id = $_SESSION['user_ID'];
 																	<div class="copy-header"></div>
 																	<div class="copy-link">
 																		<span class="copy-link-icon">
-																			<img width="20px" src="../images/icons/snapchat.svg">
+																			<img width="35px" src="../images/icons/snapchat.svg">
 																		</span>
 																		<div class="copy-link-inner">
 																			<form data-copy=true>
@@ -267,7 +267,7 @@ $auth_user_id = $_SESSION['user_ID'];
 																	<div class="copy-header"></div>
 																	<div class="copy-link">
 																		<span class="copy-link-icon">
-																			<img width="20px" src="../images/icons/tiktok.svg">
+																			<img width="35px" src="../images/icons/tiktok.svg">
 																		</span>
 																		<div class="copy-link-inner">
 																			<form data-copy=true>
@@ -286,7 +286,7 @@ $auth_user_id = $_SESSION['user_ID'];
 																	<div class="copy-header"></div>
 																	<div class="copy-link">
 																		<span class="copy-link-icon">
-																			<img width="20px" src="../images/icons/telegram.svg">
+																			<img width="35px" src="../images/icons/telegram.svg">
 																		</span>
 																		<div class="copy-link-inner">
 																			<form data-copy=true>
