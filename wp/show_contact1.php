@@ -126,7 +126,7 @@ $auth_user_id = $_SESSION['user_ID'];
 								?>
 									<tr>
 										<td>
-											<?php echo arabic_time($row['created_at']); ?>
+											<?php echo $row['created_at']; ?>
 										</td>
 										<td>
 											<?php echo $row['reference']; ?>
