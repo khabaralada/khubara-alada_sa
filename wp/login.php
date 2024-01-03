@@ -76,7 +76,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
                       if ($_SESSION['acount_type'] == 1)
                         $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no   and Supervisor=0";
                       elseif ($_SESSION['acount_type'] == 2)
-                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=0";
+                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and Supervisor=0";
                       elseif ($_SESSION['acount_type'] == 3)
                         $query = "select count(*) as co1 from reg_cors,user_cors,user where user_cors.cors_ID=reg_cors.no and  Supervisor=0 and  user_crm.ID=user_cors.user_ID and  Branches='$_SESSION[Branches]'  ";
 
@@ -112,7 +112,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
                       if ($_SESSION['acount_type'] == 1)
                         $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no   and Supervisor=1";
                       elseif ($_SESSION['acount_type'] == 2)
-                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=1";
+                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and Supervisor=1";
                       elseif ($_SESSION['acount_type'] == 3)
                         $query = "select count(*) as co1 from reg_cors,user_cors,user where user_cors.cors_ID=reg_cors.no and  Supervisor=1 and  user_crm.ID=user_cors.user_ID and  Branches='$_SESSION[Branches]'  ";
 
@@ -143,7 +143,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
                       if ($_SESSION['acount_type'] == 1)
                         $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no   and Supervisor=2";
                       elseif ($_SESSION['acount_type'] == 2)
-                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=2";
+                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and Supervisor=2";
                       elseif ($_SESSION['acount_type'] == 3)
                         $query = "select count(*) as co1 from reg_cors,user_cors,user where user_cors.cors_ID=reg_cors.no and  Supervisor=2 and  user_crm.ID=user_cors.user_ID and  Branches='$_SESSION[Branches]'  ";
 
@@ -175,7 +175,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
                       if ($_SESSION['acount_type'] == 1)
                         $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no   and Supervisor=3";
                       elseif ($_SESSION['acount_type'] == 2)
-                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=3";
+                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and Supervisor=3";
                       elseif ($_SESSION['acount_type'] == 3)
                         $query = "select count(*) as co1 from reg_cors,user_cors,user where user_cors.cors_ID=reg_cors.no and  Supervisor=3 and  user_crm.ID=user_cors.user_ID and  Branches='$_SESSION[Branches]'  ";
 
@@ -206,7 +206,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
                       if ($_SESSION['acount_type'] == 1)
                         $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no   and Supervisor=4";
                       elseif ($_SESSION['acount_type'] == 2)
-                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=4";
+                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and Supervisor=4";
                       elseif ($_SESSION['acount_type'] == 3)
                         $query = "select count(*) as co1 from reg_cors,user_cors,user where user_cors.cors_ID=reg_cors.no and  Supervisor=4 and  user_crm.ID=user_cors.user_ID and  Branches='$_SESSION[Branches]'  ";
 
@@ -237,7 +237,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
                       if ($_SESSION['acount_type'] == 1)
                         $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no   and Supervisor=5";
                       elseif ($_SESSION['acount_type'] == 2)
-                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=5";
+                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and Supervisor=5";
                       elseif ($_SESSION['acount_type'] == 3)
                         $query = "select count(*) as co1 from reg_cors,user_cors,user where user_cors.cors_ID=reg_cors.no and  Supervisor=5 and  user_crm.ID=user_cors.user_ID and  Branches='$_SESSION[Branches]'  ";
 
@@ -269,7 +269,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
                       if ($_SESSION['acount_type'] == 1)
                         $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no  and Supervisor=6";
                       elseif ($_SESSION['acount_type'] == 2)
-                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=6";
+                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and Supervisor=6";
                       elseif ($_SESSION['acount_type'] == 3)
                         $query = "select count(*) as co1 from reg_cors,user_cors,user where user_cors.cors_ID=reg_cors.no and  Supervisor=6 and  user_crm.ID=user_cors.user_ID and  Branches='$_SESSION[Branches]'  ";
 
@@ -302,7 +302,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
                       if ($_SESSION['acount_type'] == 1)
                         $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no   and Supervisor=7";
                       elseif ($_SESSION['acount_type'] == 2)
-                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=7";
+                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and Supervisor=7";
                       elseif ($_SESSION['acount_type'] == 3)
                         $query = "select count(*) as co1 from reg_cors,user_cors,user where user_cors.cors_ID=reg_cors.no and  Supervisor=7 and  user_crm.ID=user_cors.user_ID and  Branches='$_SESSION[Branches]'  ";
 
@@ -332,7 +332,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
                       if ($_SESSION['acount_type'] == 1)
                         $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no   and Supervisor=8";
                       elseif ($_SESSION['acount_type'] == 2)
-                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=8";
+                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and Supervisor=8";
                       elseif ($_SESSION['acount_type'] == 3)
                         $query = "select count(*) as co1 from reg_cors,user_cors,user where user_cors.cors_ID=reg_cors.no and  Supervisor=8 and  user_crm.ID=user_cors.user_ID and  Branches='$_SESSION[Branches]'  ";
 
@@ -371,7 +371,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
                         if ($_SESSION['acount_type'] == 1)
                           $query = "select sum(amount) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no   and Supervisor=6 ";
                         elseif ($_SESSION['acount_type'] == 2)
-                          $query = "select sum(amount) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=6  ";
+                          $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and Supervisor=6  ";
                         elseif ($_SESSION['acount_type'] == 3)
                           $query = "select sum(amount) as co1 from reg_cors,user_cors,user where user_cors.cors_ID=reg_cors.no and  user_crm.ID=user_cors.user_ID and Branches='$_SESSION[Branches]' and Supervisor=6  ";
 
@@ -413,7 +413,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
                         if ($_SESSION['acount_type'] == 1)
                           $query = "select sum(amount) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no   and Supervisor=6   and com=1";
                         elseif ($_SESSION['acount_type'] == 2)
-                          $query = "select sum(amount) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=6    and com=1";
+                          $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and Supervisor=6    and com=1";
                         elseif ($_SESSION['acount_type'] == 3)
                           $query = "select sum(amount) as co1 from reg_cors,user_cors,user where user_cors.cors_ID=reg_cors.no and  user_crm.ID=user_cors.user_ID and Branches='$_SESSION[Branches]' and Supervisor=6    and com=1 ";
 
@@ -450,7 +450,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
                         if ($_SESSION['acount_type'] == 1)
                           $query = "select sum(amount) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no   and Supervisor=6   and com=2";
                         elseif ($_SESSION['acount_type'] == 2)
-                          $query = "select sum(amount) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=6    and com=2";
+                          $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and Supervisor=6    and com=2";
                         elseif ($_SESSION['acount_type'] == 3)
                           $query = "select sum(amount) as co1 from reg_cors,user_cors,user where user_cors.cors_ID=reg_cors.no and  user_crm.ID=user_cors.user_ID and Branches='$_SESSION[Branches]' and Supervisor=6    and com=2 ";
 
@@ -491,7 +491,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
                         if ($_SESSION['acount_type'] == 1)
                           $query = "select sum(amount) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no   and Supervisor=6   and com=3";
                         elseif ($_SESSION['acount_type'] == 2)
-                          $query = "select sum(amount) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=6    and com=3";
+                          $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and Supervisor=6    and com=3";
                         elseif ($_SESSION['acount_type'] == 3)
                           $query = "select sum(amount) as co1 from reg_cors,user_cors,user where user_cors.cors_ID=reg_cors.no and  user_crm.ID=user_cors.user_ID and Branches='$_SESSION[Branches]' and Supervisor=6    and com=3 ";
 
