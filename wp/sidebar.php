@@ -335,7 +335,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=0";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=0";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=0";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -350,7 +350,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=1";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=1";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=1";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -363,7 +363,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=2";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=2";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=2";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -376,7 +376,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=3";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=3";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=3";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -389,7 +389,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=4";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=4";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=4";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -407,7 +407,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=5";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=5";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=5";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -422,7 +422,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=7";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=7";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=7";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -437,7 +437,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=8";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=8";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=8";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -456,7 +456,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=6";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=6";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=6";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -552,7 +552,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=0";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=0";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=0";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -567,7 +567,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=1";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=1";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=1";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -580,7 +580,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=2";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=2";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=2";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -593,7 +593,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=3";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=3";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=3";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -606,7 +606,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=4";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=4";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=4";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -624,7 +624,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=5";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=5";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=5";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -639,7 +639,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=7";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=7";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=7";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -654,7 +654,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=8";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=8";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=8";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -673,7 +673,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=6";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=6";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=6";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -744,7 +744,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=0";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=0";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=0";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -759,7 +759,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=1";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=1";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=1";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -772,7 +772,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=2";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=2";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=2";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -785,7 +785,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=3";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=3";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=3";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -798,7 +798,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=4";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=4";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=4";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -816,7 +816,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=5";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=5";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=5";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -831,7 +831,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=7";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=7";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=7";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -846,7 +846,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=8";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=8";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=8";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
@@ -865,7 +865,7 @@
                     if ($_SESSION['acount_type'] == 1)
                       $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and   Supervisor=6";
                     else
-                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and user_ID='$_SESSION[user_ID]' and Supervisor=6";
+                      $query1 = "select count(*) as Research_ID from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL)  and  Supervisor=6";
                     $result1 = mysqli_query($conn, $query1);
                     while ($row1 = mysqli_fetch_array($result1)) {
                       echo $row1['Research_ID'];
