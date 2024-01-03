@@ -224,6 +224,63 @@ $auth_user_id = $_SESSION['user_ID'];
 																</div>
 																<!-- Start whatsapp Link -->
 
+																<!-- Start Linkedin Link -->
+																<div class="copy-link-container">
+																	<div class="copy-header"></div>
+																	<div class="copy-link">
+																		<span class="copy-link-icon">
+																			<i class="fa fa-3x fa-linkedin"></i>
+																		</span>
+																		<div class="copy-link-inner">
+																			<form data-copy=true>
+																				<input type="text" value="<?php echo $websiteUrl . '/details1.php?ID=' . $row['ID'] . '&social=l&sponsor=' . $auth_user_id; ?>" data-click-select-all class="copy-link-input" readonly />
+																				<button value="Copy" type="submit" class="copy-link-button btn btn-info">
+																					<span class="material-icons">Copy</span>
+																				</button>
+																			</form>
+																		</div>
+																	</div>
+																</div>
+																<!-- Start Linkedin Link -->
+
+																<!-- Start snapchat Link -->
+																<div class="copy-link-container">
+																	<div class="copy-header"></div>
+																	<div class="copy-link">
+																		<span class="copy-link-icon">
+																			<i class="fa fa-3x fa-snapchat"></i>
+																		</span>
+																		<div class="copy-link-inner">
+																			<form data-copy=true>
+																				<input type="text" value="<?php echo $websiteUrl . '/details1.php?ID=' . $row['ID'] . '&social=s&sponsor=' . $auth_user_id; ?>" data-click-select-all class="copy-link-input" readonly />
+																				<button value="Copy" type="submit" class="copy-link-button btn btn-info">
+																					<span class="material-icons">Copy</span>
+																				</button>
+																			</form>
+																		</div>
+																	</div>
+																</div>
+																<!-- Start snapchat Link -->
+
+																<!-- Start tiktok Link -->
+																<div class="copy-link-container">
+																	<div class="copy-header"></div>
+																	<div class="copy-link">
+																		<span class="copy-link-icon">
+																			<i class="fa fa-3x fa-tiktok"></i>
+																		</span>
+																		<div class="copy-link-inner">
+																			<form data-copy=true>
+																				<input type="text" value="<?php echo $websiteUrl . '/details1.php?ID=' . $row['ID'] . '&social=tiktok&sponsor=' . $auth_user_id; ?>" data-click-select-all class="copy-link-input" readonly />
+																				<button value="Copy" type="submit" class="copy-link-button btn btn-info">
+																					<span class="material-icons">Copy</span>
+																				</button>
+																			</form>
+																		</div>
+																	</div>
+																</div>
+																<!-- Start tiktok Link -->
+
 
 															</div>
 															<div class="modal-footer">

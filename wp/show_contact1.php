@@ -8,6 +8,10 @@ $facebook = 0;
 $twitter = 0;
 $insta = 0;
 $whatsapp = 0;
+$linkedin = 0;
+$tiktok = 0;
+$telegram = 0;
+$snapchat = 0;
 
 $auth_user_id = $_SESSION['user_ID'];
 // var_dump($_SESSION['user_ID']);
@@ -55,7 +59,9 @@ $auth_user_id = $_SESSION['user_ID'];
 
 								<tr>
 									<th>
+										<p align="center">تاريخ الاضافة
 									<th>
+										<p align="center">المصدر
 									<th>
 										<p align="center">الحالة
 									<th>
@@ -119,16 +125,22 @@ $auth_user_id = $_SESSION['user_ID'];
 									$c++;
 								?>
 									<tr>
+										<td>
+											<?php echo arabic_time($row['created_at']); ?>
+										</td>
+										<td>
+											<?php echo $row['reference']; ?>
+										</td>
 										<form method="POST" action="<?php echo ($self); ?>">
-											<td width="2%" align="center">
+											<!-- <td width="2%" align="center">
 												<span lang="ar-sa">
 													<input required="required" onclick="return confirm('هل تريد حفظ التغيرات ؟')" type="submit" value="حذف" name="B2" style="float: left">
-											</td>
+											</td> -->
 
-											<td width="2%" align="center">
+											<!-- <td width="2%" align="center">
 												<span lang="ar-sa">
 													<input required="required" onclick="return confirm('هل تريد حفظ التغيرات ؟')" type="submit" value="تأكيد" name="B22" style="float: left">
-											</td>
+											</td> -->
 
 											<td align="center">
 												<?php echo $row['message']; ?>
@@ -215,6 +227,27 @@ $auth_user_id = $_SESSION['user_ID'];
 													case 'w':
 														$whatsapp += 1;
 														echo "whatsapp";
+														break;
+													case 'l':
+														$linkedin += 1;
+														echo "Linkedin";
+														break;
+													case 's':
+														$snapchat += 1;
+														echo "Snapchat";
+														break;
+
+													case 'tiktok':
+														$tiktok += 1;
+														echo "Tiktok";
+														break;
+													case 'tiktok':
+														$tiktok += 1;
+														echo "Tiktok";
+														break;
+													case 'telegram':
+														$telegram += 1;
+														echo "telegram";
 														break;
 													default:
 
