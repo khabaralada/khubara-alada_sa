@@ -53,11 +53,12 @@ $auth_user_id = $_SESSION['user_ID'];
 
 			<section class="content" dir=rtl>
 				<div class="box box-info">
-					<div class="box-body">
-						<table id='example1' class="table table-bordered table-striped" dir=ltr>
+					<div class="box-body table-responsive overflow-auto">
+						<table id='example1' class="table table-responsive table-bordered table-striped" dir=ltr>
 							<thead>
 
 								<tr>
+									<th></th>
 									<th>
 										<p align="center">تاريخ الاضافة
 									<th>
@@ -131,9 +132,7 @@ $auth_user_id = $_SESSION['user_ID'];
 											<td width="2%" align="center">
 												<span lang="ar-sa">
 													<input required="required" onclick="return confirm('هل تريد حفظ التغيرات ؟')" type="submit" value="حذف" name="B2" style="float: left">
-											</td>
-
-											<td width="2%" align="center">
+											
 												<span lang="ar-sa">
 													<input required="required" onclick="return confirm('هل تريد حفظ التغيرات ؟')" type="submit" value="تأكيد" name="B22" style="float: left">
 											</td>
@@ -264,7 +263,7 @@ $auth_user_id = $_SESSION['user_ID'];
 											</td>
 
 											<td align="center"><?php echo $row['dates']; ?></td>
-											<td align="center"><?php echo $row['cors_name']; ?></td>
+											<td width="20%" align="center"><?php echo $row['cors_name']; ?></td>
 											<td align="center"><?php echo $row['mobile']; ?></td>
 											<td align="center"><?php echo $row['mail']; ?></td>
 											<td align="center"><?php echo $row['nat']; ?></td>
