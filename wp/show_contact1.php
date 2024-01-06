@@ -132,15 +132,19 @@ $auth_user_id = $_SESSION['user_ID'];
 											<?php echo $row['reference']; ?>
 										</td>
 										<form method="POST" action="<?php echo ($self); ?>">
-											<!-- <td width="2%" align="center">
+										<?php
+										if ($_SESSION['acount_type'] == 1){
+										?>
+											<td width="2%" align="center">
 												<span lang="ar-sa">
 													<input required="required" onclick="return confirm('هل تريد حفظ التغيرات ؟')" type="submit" value="حذف" name="B2" style="float: left">
-											</td> -->
+											</td>
 
-											<!-- <td width="2%" align="center">
+											<td width="2%" align="center">
 												<span lang="ar-sa">
 													<input required="required" onclick="return confirm('هل تريد حفظ التغيرات ؟')" type="submit" value="تأكيد" name="B22" style="float: left">
-											</td> -->
+											</td>
+											<?php } ?>
 
 											<td align="center">
 												<?php echo $row['message']; ?>
