@@ -92,7 +92,7 @@ include("../config.php");
 										</td>
 										<td width="84">
 											<font face="Tahoma" size="2">
-												<textarea required="required" rows="2" name="T7[]" cols="20" style="width: 100%; height: 64"><?php echo $row['youtube']; ?></textarea>
+												<textarea required="required" rows="2" name="tiktok[]" cols="20" style="width: 100%; height: 64"><?php echo $row['tiktok']; ?></textarea>
 											</font>
 										</td>
 										<td width="84">
@@ -179,6 +179,7 @@ if ("Saving changes" == "$B4") {
 			$T5 = mysqli_real_escape_string($conn, htmlspecialchars($_POST['T5'][$i], ENT_QUOTES, "utf-8"));
 			$T6 = mysqli_real_escape_string($conn, htmlspecialchars($_POST['T6'][$i], ENT_QUOTES, "utf-8"));
 			$T7 = mysqli_real_escape_string($conn, htmlspecialchars($_POST['T7'][$i], ENT_QUOTES, "utf-8"));
+			$tiktok = mysqli_real_escape_string($conn, htmlspecialchars($_POST['tiktok'][$i], ENT_QUOTES, "utf-8"));
 			$T8 = mysqli_real_escape_string($conn, htmlspecialchars($_POST['T8'][$i], ENT_QUOTES, "utf-8"));
 			$T9 = mysqli_real_escape_string($conn, htmlspecialchars($_POST['T9'][$i], ENT_QUOTES, "utf-8"));
 			$T10 = mysqli_real_escape_string($conn, htmlspecialchars($_POST['T10'][$i], ENT_QUOTES, "utf-8"));
@@ -207,7 +208,7 @@ if ("Saving changes" == "$B4") {
 			$D9 = mysqli_real_escape_string($conn, htmlspecialchars($_POST['D9'][$i], ENT_QUOTES, "utf-8"));
 			$D10 = mysqli_real_escape_string($conn, htmlspecialchars($_POST['D10'][$i], ENT_QUOTES, "utf-8"));
 
-			$sql = "UPDATE  media  set facebook='$T1',twitter='$T2',instagram='$T3',linked='$T4',whatsapp='$T5',youtube='$T6' ,tiktok='$T7' where ID='$ID'";
+			$sql = "UPDATE  media  set facebook='$T1',twitter='$T2',instagram='$T3',linked='$T4',whatsapp='$T5',youtube='$T6' ,tiktok='$tiktok' where ID='$ID'";
 			if (@mysqli_query($conn, $sql)) {
 				echo '<meta http-equiv="refresh" content="1;url=media.php">';
 			}

@@ -165,7 +165,7 @@ while($row9=mysqli_fetch_array($result9))
         <div class="row">
            </style>
 <?php
-$result=mysqli_query($conn,"select* from media");
+$result=mysqli_query($conn,"select * from media");
 while($row=mysqli_fetch_array($result))
 {
 $facebook=$row['facebook'];
@@ -174,6 +174,7 @@ $instagram=$row['instagram'];
 $youtube=$row['youtube'];
 $linked=$row['linked'];
 $whatsapp=$row['whatsapp'];
+$tiktok=$row['tiktok'];
 }
 ?>
           
