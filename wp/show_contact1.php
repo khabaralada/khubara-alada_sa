@@ -125,14 +125,7 @@ $auth_user_id = $_SESSION['user_ID'];
 									$c++;
 								?>
 									<tr>
-										<td>
-											<?php echo $row['created_at']; ?>
-										</td>
-										<td>
-											<?php echo $row['reference']; ?>
-										</td>
-										<form method="POST" action="<?php echo ($self); ?>">
-										<?php
+									<?php
 										if ($_SESSION['acount_type'] == 1){
 										?>
 											<td width="2%" align="center">
@@ -145,6 +138,14 @@ $auth_user_id = $_SESSION['user_ID'];
 													<input required="required" onclick="return confirm('هل تريد حفظ التغيرات ؟')" type="submit" value="تأكيد" name="B22" style="float: left">
 											</td>
 											<?php } ?>
+										<td>
+											<?php echo $row['created_at']; ?>
+										</td>
+										<td>
+											<?php echo $row['reference']; ?>
+										</td>
+										<form method="POST" action="<?php echo ($self); ?>">
+										
 
 											<td align="center">
 												<?php echo $row['message']; ?>
