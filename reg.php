@@ -335,12 +335,12 @@ where  acount_type=2  and Activation=1 and stop=0 and ID in (select user_ID from
             <div class="col-md-4  ">
               <div class="widget">
                 <ul class="styled-icons icon-sm pull-left flip sm-pull-none sm-text-center mt-5">
-                  <li><a href="<? echo $facebook; ?>"><i class="fa fa-facebook text-white"></i></a></li>
-                  <li><a href="<? echo $twitter; ?>"><i class="fa fa-twitter text-white"></i></a></li>
-                  <li><a href="<? echo $whatsapp; ?>"><i class="fa fa-whatsapp text-white"></i></a></li>
-                  <li><a href="<? echo $youtube; ?>"><i class="fa fa-youtube text-white"></i></a></li>
-                  <li><a href="<? echo $instagram; ?>"><i class="fa fa-instagram text-white"></i></a></li>
-                  <li><a href="<? echo $linked; ?>"><i class="fa fa-snapchat text-white"></i></a></li>
+                  <li><a target="_blank" href="<? echo $facebook; ?>"><i class="fa fa-facebook text-white"></i></a></li>
+                  <li><a target="_blank" href="<? echo $twitter; ?>"><i class="fa fa-twitter text-white"></i></a></li>
+                  <li><a target="_blank" href="<? echo $whatsapp; ?>"><i class="fa fa-whatsapp text-white"></i></a></li>
+                  <li><a target="_blank" href="<? echo $youtube; ?>"><i class="fa fa-youtube text-white"></i></a></li>
+                  <li><a target="_blank" href="<? echo $instagram; ?>"><i class="fa fa-instagram text-white"></i></a></li>
+                  <li><a target="_blank" href="<? echo $linked; ?>"><i class="fa fa-snapchat text-white"></i></a></li>
 
                 </ul>
               </div>
