@@ -579,9 +579,10 @@ $tiktok=$row['tiktok'];
 
                     <div class="col-sm-12">
                       <div class="form-group mb-20">
-                        <input placeholder="الهوية الوطنية" pattern="[0-9]{10,10}" title="الحقل يجب ان يحتوي علي رقم فقط ويحتوي علي 10 ارقام" id="reservation_iqama" name="iqama" class="form-control" required="" aria-required="true">
+                        <input placeholder="اسم المستخدم"  id="reservation_iqama" name="iqama" class="form-control" required="" aria-required="true">
                       </div>
                     </div>
+                    <!-- pattern="[0-9]{10,10}" title="الحقل يجب ان يحتوي علي رقم فقط ويحتوي علي 10 ارقام" -->
 
 
 
@@ -589,16 +590,16 @@ $tiktok=$row['tiktok'];
 
                     <div class="col-sm-12">
                       <div class="form-group mb-20">
-                        <input placeholder="الجوال" id="reservation_phone" pattern="[0]{1}[5]{1}[0-9]{8}" title="الحقل يجب ان يحتوي علي رقم فقط ويحتوي علي 10 ارقام يبدء 05xxxxxxxx" name="phone" class="form-control" required="" aria-required="true" type="text">
+                        <input placeholder="رقم الجوال" id="reservation_phone" pattern="[0]{1}[5]{1}[0-9]{8}" title="الحقل يجب ان يحتوي علي رقم فقط ويحتوي علي 10 ارقام يبدء 05xxxxxxxx" name="phone" class="form-control" required="" aria-required="true" type="text">
                       </div>
                     </div>
 
 
-                    <div class="col-sm-12">
+                    <!-- <div class="col-sm-12">
                       <div class="form-group mb-20">
                         <input placeholder="البريد الالكتروني" id="reservation_email" name="email" class="form-control" required="" aria-required="true" type="email">
                       </div>
-                    </div>
+                    </div> -->
 
 
                     <input placeholder="الجنسية" type=hidden value='سعودي' required name="nat" class="form-control" type="text">

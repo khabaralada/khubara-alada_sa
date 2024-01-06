@@ -7,8 +7,8 @@ if (phpversion() >= "4.2.0") {
     extract($_SERVER);
 }
 $servername = "localhost";
-$username = "khubaraa_db";
-$password = "khubaraa_db";
+$username = "root";
+$password = "root";
 $dbname = "khubaraa_db";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {

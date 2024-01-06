@@ -727,23 +727,24 @@ $tiktok=$row['tiktok'];
                     <form id="quick_contact_form_sidebar" name="footer_quick_contact_form" class="quick-contact-form" action="" method="post">
                       <div class="form-group">
                         <input class="form-control" type="hidden" name='cors' value="<? echo $ss; ?>" required="">
-                        <input class="form-control" type="text" name='fullname' placeholder="الاسم" required="">
+                        <input class="form-control" type="text" name='fullname' id="fullname" placeholder="الاسم" required="">
                       </div>
 
 
                       <div class="form-group">
-                        <input placeholder="الهوية الوطنية" required pattern="[0-9]{10,10}" title="الحقل يجب ان يحتوي علي رقم فقط ويحتوي علي 10 ارقام" name="iqama" class="form-control" type="text">
+                        <input placeholder="اسم المستخدم" required name="iqama" id="username" class="form-control" type="text">
                       </div>
+                      <!-- title="الحقل يجب ان يحتوي علي رقم فقط ويحتوي علي 10 ارقام" -->
 
 
 
 
-                      <div class="form-group">
+                      <!-- <div class="form-group">
                         <input class="form-control required email" type="email" placeholder="البريد الالكتروني" name="email">
-                      </div>
+                      </div> -->
 
                       <div class="form-group">
-                        <input placeholder="وسيلة الاتصال" required pattern="[0]{1}[5]{1}[0-9]{8}" title="الحقل يجب ان يحتوي علي رقم فقط ويحتوي علي 10 ارقام يبدء 05xxxxxxxx" name="phone" class="form-control" type="text">
+                        <input placeholder="رقم الجوال" required pattern="[0]{1}[5]{1}[0-9]{8}" title="الحقل يجب ان يحتوي علي رقم فقط ويحتوي علي 10 ارقام يبدء 05xxxxxxxx" name="phone" class="form-control" type="text">
 
                       </div>
 
@@ -830,6 +831,13 @@ $tiktok=$row['tiktok'];
   <!-- JS | Custom script for all pages -->
   <script src="js/custom.js"></script>
 
+  <!-- <script>
+    var fullname= document.getElementById('fullname');
+    var username= document.getElementById('username');
+    fullname.addEventListener('change' , function(){
+    });
+
+  </script> -->
 </body>
 
 </html>
