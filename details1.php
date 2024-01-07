@@ -750,10 +750,10 @@ $tiktok=$row['tiktok'];
 
 
 
-                      <div class="form-group">
+                      <div class="form-group" style="display: none;">
                         <select id="online" name="reg_price" class="form-control" required="">
                           <option value=''>نوع التدريب</option>
-                          <? if ($price1 > 0) { ?> <option value="<? echo $price1; ?>">حضوري ( <? echo $price1; ?> )ريال</option><?php } ?>
+                          <? if ($price1 > 0) { ?> <option selected value="<? echo $price1; ?>">حضوري ( <? echo $price1; ?> )ريال</option><?php } ?>
                           <? if ($price2 > 0) { ?> <option value="<? echo $price2; ?>">اونلاين ( <? echo $price2; ?> )ريال</option><?php } ?>
 
                         </select>
