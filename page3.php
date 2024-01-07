@@ -389,7 +389,7 @@ if(!file_exists($imagePath) or $row['photo']=="")
     else
               $imagePath = "stus/cors_files/".$row['photo'];
     ?>
-                <a href="details1.php?ID=<? echo $row['ID']; ?>"><img class="img-fullwidth" alt="" src="<? echo $imagePath; ?>" style="width:360px;height:250px"></a>
+                <a href="details1.php?ID=<? echo $row['ID']; ?>"><img class="img-fullwidth" alt="" src="<? echo $imagePath; ?>" style="width:360px;height:auto"></a>
                 
                 
                 
