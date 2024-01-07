@@ -80,7 +80,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
 
 
       <section class="content" dir=rtl>
-        <div class="box box-info">
+        <div class="box box-info" style="overflow: auto;">
           <div class="box-body">
 
 
@@ -202,7 +202,7 @@ where user_cors.cors_ID=reg_cors.no and  cors.cors_ID=subjects.cors_ID and addre
                         <p align="center"><?php echo $row['name']; ?>
                       </td>
                       <td align="right">
-                        <p align="center"><?php echo $row['mobile']; ?>
+                        <p align="center"><a href="tel:<?php echo $row['mobile']; ?>"><?php echo $row['mobile']; ?></a>
                       </td>
                       <td align="right"><a target=_blank href="https://wa.me/966<?php echo $row[mobile]; ?>?text=
  
