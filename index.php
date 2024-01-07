@@ -327,7 +327,7 @@ where  acount_type=2  and Activation=1 and stop=0 and ID in (select user_ID from
               $youtube = $row['youtube'];
               $linked = $row['linked'];
               $whatsapp = $row['whatsapp'];
-$tiktok=$row['tiktok'];
+              $tiktok = $row['tiktok'];
             }
             ?>
 
@@ -339,7 +339,9 @@ $tiktok=$row['tiktok'];
                   <li><a target="_blank" href="<? echo $whatsapp; ?>"><i class="fa fa-whatsapp text-white"></i></a></li>
                   <li><a target="_blank" href="<? echo $youtube; ?>"><i class="fa fa-youtube text-white"></i></a></li>
                   <li><a target="_blank" href="<? echo $instagram; ?>"><i class="fa fa-instagram text-white"></i></a></li>
-                  <li><a target="_blank" href="<? echo $tiktok; ?>"><svg xmlns="http://www.w3.org/2000/svg" height="13" width="13" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg></a></li>
+                  <li><a target="_blank" href="<? echo $tiktok; ?>"><svg xmlns="http://www.w3.org/2000/svg" height="13" width="13" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#ffffff" d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
+                      </svg></a></li>
 
                 </ul>
               </div>
@@ -909,96 +911,47 @@ $tiktok=$row['tiktok'];
                 <h3 class="title-pattern mt-0"><span class="text-white">نموذج <span class="text-theme-colored2">التسجيل</span></span></h3>
                 <!-- Appilication Form Start--> <?php if (isset($message)) echo $message;  ?>
                 <form id="reservation_form" name="reservation_form" class="reservation-form mt-20" method="post" action="">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="form-group mb-20">
-                        <input placeholder="الاسم" id="reservation_name" name="fullname" required="" class="form-control" aria-required="true" type="text">
-                      </div>
-                    </div>
+                  <div class="form-group">
+                    <input class="form-control" type="hidden" name='cors' value="<? echo $ss; ?>" required="">
+                    <input class="form-control" type="text" name='fullname' id="fullname" placeholder="الاسم" required="">
+                  </div>
 
+                  <div class="form-group">
+                    <input placeholder="اسم المستخدم" required name="iqama" id="username" class="form-control" type="text">
+                  </div>
+                  <!-- title="الحقل يجب ان يحتوي علي رقم فقط ويحتوي علي 10 ارقام" -->
+                  <!-- <div class="form-group">
+                        <input class="form-control required email" type="email" placeholder="البريد الالكتروني" name="email">
+                      </div> -->
 
-                    <div class="col-sm-12">
-                      <div class="form-group mb-20">
-                        <input placeholder="الهوية الوطنية" pattern="[0-9]{10,10}" title="الحقل يجب ان يحتوي علي رقم فقط ويحتوي علي 10 ارقام" id="reservation_iqama" name="iqama" class="form-control" required="" aria-required="true">
-                      </div>
-                    </div>
+                  <div class="form-group">
+                    <input placeholder="رقم الجوال" required pattern="[0]{1}[5]{1}[0-9]{8}" title="الحقل يجب ان يحتوي علي رقم فقط ويحتوي علي 10 ارقام يبدء 05xxxxxxxx" name="phone" class="form-control" type="text">
 
+                  </div>
 
+                  <div class="form-group" style="display: none;">
+                    <select id="online" name="reg_price" class="form-control" required="">
+                      <option value=''>نوع التدريب</option>
+                      <? if ($price1 > 0) { ?> <option selected value="<? echo $price1; ?>">حضوري ( <? echo $price1; ?> )ريال</option><?php } ?>
+                      <? if ($price2 > 0) { ?> <option value="<? echo $price2; ?>">اونلاين ( <? echo $price2; ?> )ريال</option><?php } ?>
 
-                    <div class="col-sm-12">
-                      <div class="form-group mb-20">
-                        <input placeholder="الجوال" id="reservation_phone" pattern="[0]{1}[5]{1}[0-9]{8}" title="الحقل يجب ان يحتوي علي رقم فقط ويحتوي علي 10 ارقام يبدء 05xxxxxxxx" name="phone" class="form-control" required="" aria-required="true" type="text">
-                      </div>
-                    </div>
+                    </select>
+                  </div>
 
+                  <input placeholder="الجنسية" type=hidden value='سعودي' required name="nat" class="form-control" type="text">
+                  <input placeholder="الجنسية" type=hidden value='جامعي' required name="qualification" class="form-control" type="text">
 
-                    <div class="col-sm-12">
-                      <div class="form-group mb-20">
-                        <input placeholder="البريد الالكتروني" id="reservation_email" name="email" class="form-control" required="" aria-required="true" type="email">
-                      </div>
-                    </div>
+                  <div class="form-group">
+                    <input type=hidden name="message" class="form-control" placeholder="الملاحظات والاستفسارات ان وجد">
+                    <!-- <div class="g-recaptcha" data-sitekey="<?php echo $sitKey; ?>" align="center"></div> -->
 
+                  </div>
+                  <div class="form-group">
+                    <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                    <input type="hidden" name="social_media" value="<?php echo @$_GET['social']; ?>">
+                    <input type="hidden" name="sponsor" value="<?php echo @$_GET['sponsor']; ?>">
 
-                    <input placeholder="الجنسية" type=hidden value='سعودي' required name="nat" class="form-control" type="text">
-                    <input placeholder="الجنسية" type=hidden value='جامعي' required name="qualification" class="form-control" type="text">
-
-
-
-                    <div class="col-sm-12">
-                      <div class="form-group mb-20">
-
-                        <select id="person_select" name="cors" class="form-control" required="" onclick="fetch_select1(this.value);" onchange="fetch_select1(this.value); ">
-                          <option value='' hidden>الدورة التدريبية</option>
-                          <?
-                          $result = mysqli_query($conn, "select* from subjects,cors
- where cors.cors_ID=subjects.cors_ID and  show_reg=1 ");
-                          while ($row = mysqli_fetch_array($result)) {
-
-                          ?>
-                            <option value="<? echo $row['ID']; ?>"><? echo $row['cors_name']; ?></option>
-                          <? } ?>
-                        </select>
-                      </div>
-                    </div>
-
-
-
-
-
-                    <div class="col-sm-12">
-                      <div class="form-group mb-20">
-
-                        <select id="new_select1" name="reg_price" class="form-control" required="">
-                          <option value='' hidden>نمط التدريب</option>
-
-                        </select>
-                      </div>
-                    </div>
-
-
-
-
-
-
-                    <div class="col-sm-12">
-                      <div class="form-group">
-                        <input placeholder="البريد الالكتروني" id="form_message" name="message" class="form-control" required="" aria-required="true" type="hidden">
-
-
-
-                        <div class="g-recaptcha" data-sitekey="<?php echo $sitKey; ?>" align="center"></div>
-
-                      </div>
-                    </div>
-
-
-
-                    <div class="col-sm-12">
-                      <div class="form-group mb-0 mt-10">
-                        <input name="form_botcheck" class="form-control" value="" type="hidden">
-                        <button type="submit" name="contact" class="btn btn-colored btn-theme-colored2 text-white btn-lg btn-block">تسجيل</button>
-                      </div>
-                    </div>
+                    <button type="submit" name="contact" class="btn btn-colored btn-theme-colored2    ">سجل الآن</button>
                   </div>
                 </form>
                 <!-- Application Form End-->
