@@ -63,29 +63,50 @@ $auth_user_id = $_SESSION['user_ID'];
 							<form method="POST" name="form2" action="<?php echo ($self); ?>">
 								<thead>
 									<tr>
+										<th align="center">
+											<p align=center>
+												زوار من خارج السوشيال ميديا
+											</p>
+										</th>
+										<th align="right">
+											<p align=center>
+												الزوار
+											</p>
+										</th>
 										<th align="right">
 											<p align=center>
 												المسجلين
-										<th align="right">
+											</p>
+										</th>
+										<th align="right"></th>
 										<th align="right">
 											<p align=center>
 												Sponsor - لينك الدوره
+											</p>
+										</th>
 
 										<th align="right">
 											<p align=center>
 												Course name
+											</p>
+										</th>
 										<th align="right">
 											<p align=center>
-
-												المدة </td>
+												المدة
+											</p>
+										</th>
 										<th align="right">
 											<p align=center>
-												بداية الدورة&nbsp;&nbsp;
+												بداية الدورة
+											</p>
+										</th>
 										<th align="right">
 											<p align=center>
-
-												الدورة</font></b></td>
+												الدورة
+											</p>
+										</th>
 										<th align="right">#
+										</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -98,6 +119,33 @@ $auth_user_id = $_SESSION['user_ID'];
 										$c++;
 									?>
 										<tr>
+											<td align="center"><?php echo $row['visitors']; ?></td>
+											<td align="center" width="15%">
+												<table width="100%" border="1">
+													<thead>
+														<th style="margin:auto;text-align:center"><i class="fa fa-2x fa-facebook-square"></i></th>
+														<th style="margin:auto;text-align:center"><i class="fa fa-2x fa-twitter-square"></i></th>
+														<th style="margin:auto;text-align:center"><i class="fa fa-2x fa-instagram"></i></th>
+														<th style="margin:auto;text-align:center"><i class="fa fa-2x fa-whatsapp"></i></th>
+														<th style="margin:auto;text-align:center"><i class="fa fa-2x fa-linkedin-square"></i></th>
+														<th style="margin:auto;text-align:center"><img width="20px" src="../images/icons/snapchat.svg"></th>
+														<th style="margin:auto;text-align:center"><img width="20px" src="../images/icons/tiktok.svg"></th>
+														<th style="margin:auto;text-align:center"><img width="20px" src="../images/icons/telegram.svg"></th>
+													</thead>
+													<tbody>
+														<tr>
+															<td align="center"><?php echo $row['visitors_f']; ?></td>
+															<td align="center"><?php echo $row['visitors_t']; ?></td>
+															<td align="center"><?php echo $row['visitors_i']; ?></td>
+															<td align="center"><?php echo $row['visitors_w']; ?></td>
+															<td align="center"><?php echo $row['visitors_l']; ?></td>
+															<td align="center"><?php echo $row['visitors_s']; ?></td>
+															<td align="center"><?php echo $row['visitors_tiktok']; ?></td>
+															<td align="center"><?php echo $row['visitors_telegram']; ?></td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
 											<td align="right" dir="rtl">
 
 												<font face="Droid Arabic Kufi" size="2"><b>
@@ -124,8 +172,6 @@ $auth_user_id = $_SESSION['user_ID'];
 														} ?></b></font>
 											</td>
 											<td align="right" dir="rtl">
-
-
 												<?php if ($row['show_reg'] == 1) { ?> <img border="0" src="2.png" width="18" height="23"><?php } else { ?>
 													X<?php } ?>
 											</td>
