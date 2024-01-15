@@ -90,13 +90,47 @@ while ($row9 = mysqli_fetch_array($result9)) {
                       ?>
                     </h3>
 
-                    حالات التسجيل الجديدة
+                    حالات التسجيل
 
                   </div>
                   <div class="icon">
                     <i class="fa fa-circle "></i>
                   </div>
                   <a href="rep1.php?ID=0" class="small-box-footer"><i class="fa fa-arrow-circle-left"></i>
+                    عرض التفاصيل
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col- lg-3">
+                <div class="small-box bg-aqua">
+                  <div class="inner">
+                    <h3>
+                      <?php
+                      if ($_SESSION['acount_type'] == 1)
+                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no   and Supervisor=0 and added_new =1";
+                      elseif ($_SESSION['acount_type'] == 2)
+                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and Supervisor=0 and added_new =1";
+                      elseif ($_SESSION['acount_type'] == 3)
+                        $query = "select count(*) as co1 from reg_cors,user_cors,user where user_cors.cors_ID=reg_cors.no and  Supervisor=0 and  user_crm.ID=user_cors.user_ID and  Branches='$_SESSION[Branches]' and added_new =1 ";
+
+
+
+
+                      $result = mysqli_query($conn, $query);
+                      while ($row = mysqli_fetch_array($result)) {
+                        echo $row['co1'];
+                      }
+                      ?>
+                    </h3>
+
+                    حالات التسجيل
+
+                  </div>
+                  <div class="icon">
+                    <i class="fa fa-circle "></i>
+                  </div>
+                  <a href="rep_new.php?ID=0" class="small-box-footer"><i class="fa fa-arrow-circle-left"></i>
                     عرض التفاصيل
                   </a>
                 </div>
