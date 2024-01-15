@@ -169,7 +169,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
 where added_new=1 and user_cors.cors_ID=reg_cors.no and   cors.cors_ID=subjects.cors_ID and address=cors.ID  and Supervisor='$ss' order by reg_cors.no DESC ";
                 elseif ($_SESSION['acount_type'] == 2)
                   $query = "select * from reg_cors,user_cors,subjects,cors 
-where  added_new=1 and user_cors.cors_ID=reg_cors.no AND (user_ID='$_SESSION[user_ID]' OR user_ID IS NULL) and cors.cors_ID=subjects.cors_ID and address=cors.ID  and Supervisor='$ss' order by reg_cors.no DESC ";
+where  added_new=1 and user_cors.cors_ID=reg_cors.no and cors.cors_ID=subjects.cors_ID and address=cors.ID  and Supervisor='$ss' order by reg_cors.no DESC ";
 
                 elseif ($_SESSION['acount_type'] == 3)
                   $query = "select * from user_crm,reg_cors,user_cors,subjects,cors

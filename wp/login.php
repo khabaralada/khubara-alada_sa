@@ -110,7 +110,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
                       if ($_SESSION['acount_type'] == 1)
                         $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no   and Supervisor=0 and added_new =1";
                       elseif ($_SESSION['acount_type'] == 2)
-                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no AND (user_ID = '$_SESSION[user_ID]' OR user_ID IS NULL) and Supervisor=0 and added_new =1";
+                        $query = "select count(*) as co1 from reg_cors,user_cors where user_cors.cors_ID=reg_cors.no and Supervisor=0 and added_new =1";
                       elseif ($_SESSION['acount_type'] == 3)
                         $query = "select count(*) as co1 from reg_cors,user_cors,user where user_cors.cors_ID=reg_cors.no and  Supervisor=0 and  user_crm.ID=user_cors.user_ID and  Branches='$_SESSION[Branches]' and added_new =1 ";
 
