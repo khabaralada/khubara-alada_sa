@@ -124,7 +124,7 @@ while ($row9 = mysqli_fetch_array($result9)) {
                       ?>
                     </h3>
 
-                    حالات التسجيل
+                    حالات التسجيل الجديده
 
                   </div>
                   <div class="icon">
